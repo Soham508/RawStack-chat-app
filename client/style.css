@@ -1,0 +1,128 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   scroll-behavior: smooth;    
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #f6d8d8;
+}
+
+.title{
+    margin: 20px 0;
+}
+
+.main {
+    border: 8px solid #fc7676;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  
+.name {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #7e7e7e;
+    background-color: #ff8b8b;
+  }
+
+.name-input {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #ff8b8b;
+  }
+
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #feeded;
+    width: 400px;
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+.left-chat,
+.right-chat {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.left-chat {
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #fff;
+    box-shadow: -2px 2px 4px #dcdcdc;
+  }
+  
+.right-chat {
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #f96767;
+    box-shadow: 2px 2px 4px #dcdcdc;
+    color: #f6f6f6;
+  }
+
+.left-chat> p > span,
+.right-chat > p > span {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 16px 16px 16px;
+    color: #2d2d2d;
+    text-align: center;
+  }
+
+.message-form {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+.message-input {
+    flex-grow: 1;
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    background-color: #ffffff;
+  }
+
+.button {
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    padding: 0px 20px;
+    outline: none;
+    background-color: #f96767;
+    cursor: pointer;
+    color: #f6f6f6;
+  }
+
+.clients-total {
+    text-align: center;
+    margin: 20px ;
+    color: #555454;
+  }
