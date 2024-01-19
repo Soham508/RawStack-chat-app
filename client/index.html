@@ -12,43 +12,36 @@
 
     <h1 class="title"> Let's Chat</h1>
 
+    <div id="alertBox" class="alertBox">
+        Please enter some text!
+    </div>
+
     <div class="main">
         <div class="name">
-            <span></span>
             <input type="text" id="name-input" class="name-input" value="annonymous">
         </div>
 
         <ul class="chat-container" id="chat-container">
-            <li class="left-chat">
-                <p class="message">
-                    left chat
-                    <span>bluebird ● 26 July 10:40</span>
-                </p>
 
-            </li>
-            <li class="right-chat">
-                <p class="message">
-                    right messagae
-                    <span>bluebird ● 26 July 10:40</span>
-                </p>
-
-            </li>
             <li class="message-feedback">
-                <p class="feedback">
-                    feedback
+                <p class="feedback" id="feedback">
+
                 </p>
 
             </li>
         </ul>
 
-        <form class="message-form">
-            <input type="text" name='message' class="message-input">
-            <button class="button"> Submit</button>
+        <form class="message-form" id="message-form">
+            <input type="text" name='message' id="message" class="message-input">
+            <button class="button" type="submit"> Submit</button>
         </form>
 
-        <h3 class="clients-total"> Total Clients: 2 </h3>
+        <h3 class="clients-total" id="clients-total"> Total Clients: 2 </h3>
     </div>
 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js"></script>;
+    <script src="main.js"> </script>
 </body>
 
 </html>
